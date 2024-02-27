@@ -6,9 +6,6 @@ const Sidebar = () => {
   return (
     <aside 
       className="absolute top-0 left-0 right-[100%] sm:relative bg-mobile sm:bg-desktop sm:bg-cover bg-no-repeat w-[100%] h-[100%] pt-8 sm:pl-8 sm:basis-[30%] sm:rounded-lg flex items-start justify-center sm:flex-col sm:justify-start bg-blue-600"
-      style={{
-        background: 
-      }}
     >
       {data.map((item, idx) => {
         return (
@@ -17,18 +14,6 @@ const Sidebar = () => {
             className="flex items-center space-x-4 leading-4 sm:mb-10"
           >
             <Link
-              // style={({ isActive }) => ({
-              //   color: isActive ? "#000" : "hsl(229, 24%, 87%)",
-              //   background: isActive ? "hsl(228, 100%, 84%)" : "transparent",
-              //   border: isActive ? "none" : "2px solid hsl(229, 24%, 87%)",
-              //   fontWeight: "500",
-              //   width: "2rem",
-              //   height: "2rem",
-              //   borderRadius: "50%",
-              //   display: "flex",
-              //   justifyContent: "center",
-              //   alignItems: "center",
-              // })}
               href={item.linkTo}
             >
               {item.id}
